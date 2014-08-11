@@ -1,0 +1,21 @@
+<?php
+class {{ controller_name }} extends BaseController 
+{
+    protected $layout = 'layouts.default';
+
+    public function create()
+    {
+        $this->layout->content = View::make('{{ sign_in_path }}');
+    }
+
+    public function store()
+    {
+    
+    }
+
+    public function destroy()
+    {
+        Auth::logOut();
+        return Redirect::home();
+    }
+}

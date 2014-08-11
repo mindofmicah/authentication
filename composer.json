@@ -1,0 +1,27 @@
+{
+    "name": "mindofmicah/authentication-system",
+    "description": "",
+    "authors": [
+        {
+            "name": "micah eschbacher",
+            "email": "micah@whamdonk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "mustache/mustache": "2.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mindofmicah\\AuthenticationSystem\\": "src/",
+            "": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpspec/phpspec": "2.*",
+        "phpspec/nyan-formatters": "1.*",
+        "codeception/codeception": "2.*"
+    }
+}
